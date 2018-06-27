@@ -141,15 +141,49 @@ $ git checkout -- file
 
 ### Etiquetas
 
-Listar
++ _Listar_
 
 ```shell
 $ git tag
 ```
 
-Crear
++ _Crear_
 ```shell
 $ git tag -a v1.0 -m 'version 1.0'
 ```
+
+![alt text](./img/git_tag.png "Git tag")
+
++ _Push_
+
+```shell
+$ git push origin v1.0
+```
+
+Ramas
+-----
+
+Es un apuntador movil apuntando a una confirmación. 
+_master_ es la rama principal del proyecto
+
+* _Mostrar_ 
+
+```shell
+$ git branch
+```
+
+* _Crear_
+
+```shell
+$ git branch testing
+```
+![alt text](./img/git_branch.png "Git branch")
+
+* _Cambiar de rama_
+
+```shell
+$ git checkout testing
+```
+![alt text](./img/git_checkout.png "Git checkout")
 
 Git Flow
