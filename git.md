@@ -61,6 +61,7 @@ core.precomposeunicode=true
 ```
 
 user.name=
+
 user.email
 
 
@@ -74,6 +75,16 @@ $ git status
 $ git add .
 ```
 ![alt text](./img/staged.png "Git staged")
+
+```shell
+$ git commit -am "First commit"
+```
+![alt text](./img/git_commit.png "Git commit")
+
+```shell
+$ git status
+```
+![alt text](./img/git_commit_status.png "Git commit status")
 
 
 
