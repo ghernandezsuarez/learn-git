@@ -152,4 +152,11 @@ Crear
 $ git tag -a v1.0 -m 'version 1.0'
 ```
 
+Cambios en una rama
+
+Al realizar cambios en una rama ejemplo testing, esta rama avanza con cada commit
+
+
+
+
 Git Flow
