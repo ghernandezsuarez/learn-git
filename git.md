@@ -179,11 +179,17 @@ $ git branch testing
 ```
 ![alt text](./img/git_branch.png "Git branch")
 
+
+![alt text](https://git-scm.com/figures/18333fig0305-tn.png "http://git-scm.com")
+
+
 * _Cambiar de rama_
 
 ```shell
 $ git checkout testing
 ```
 ![alt text](./img/git_checkout.png "Git checkout")
+
+![alt text](https://git-scm.com/figures/18333fig0306-tn.png "http://git-scm.com")
 
 Git Flow
