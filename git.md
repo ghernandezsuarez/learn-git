@@ -108,5 +108,10 @@ $ gitk
 Archivos que no serán versionados
 
 
+Deshacer
+--------
+
+
+
 
 Git Flow
