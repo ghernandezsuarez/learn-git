@@ -111,7 +111,26 @@ Archivos que no serán versionados
 Deshacer
 --------
 
+### Modificar ultimo commit
+
+```sell
+$ git commit -m "Add feature"
+$ git add newfile
+git commit --amend
+```
+
+![alt text](./img/git_amend.png "Git amend")
 
 
+### Sacar un archivo del área de preparación
+
+![alt text](./img/git_reset_add.png "Git reset add .")
+
+
+```shell
+$ git reset HEAD file2.txt
+```
+
+![alt text](./img/git_reset_head.png "Git reset HEAD")
 
 Git Flow
