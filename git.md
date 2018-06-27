@@ -64,6 +64,7 @@ user.name=
 
 user.email
 
+### Git Status 
 
 ```shell
 $ git status
@@ -71,10 +72,13 @@ $ git status
 
 ![alt text](./img/git_status.png "Git status")
 
+### Git Add 
 ```shell
 $ git add .
 ```
 ![alt text](./img/staged.png "Git staged")
+
+### Git Commit 
 
 ```shell
 $ git commit -am "First commit"
@@ -85,6 +89,18 @@ $ git commit -am "First commit"
 $ git status
 ```
 ![alt text](./img/git_commit_status.png "Git commit status")
+
+### Git Log
+
+```shell
+$ git log
+```
+![alt text](./img/git_log.png "Git log")
+
+
+### Git Ignore
+
+Archivos que no serán versionados
 
 
 
