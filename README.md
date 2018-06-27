@@ -2,6 +2,10 @@
 Control de versiones GIT
 ========================
 
+Conceptos Básicos
+=================
+
+
 El control de versiones es un sistema que registra los cambios realizados sobre un archivo o conjunto de archivos a lo largo del tiempo, de modo que puedas recuperar versiones específicas más adelante.
 
 
@@ -13,27 +17,31 @@ El control de versiones es un sistema que registra los cambios realizados sobre 
 Estados
 -------
 
-	- Confirmado (commited) : Los datos estan almacenados de forma segura en la base de datos local.
-	- Modificado (modified) : Se ha modificado el archivo pero todavía no lo has confirmado a tu base de datos. 
-	- Preparado (staged) : Se ha marcado un archivo modificado en su versión actual para que vaya en tu próxima confirmación.
+- Confirmado (commited) : Los datos estan almacenados de forma segura en la base de datos local.
+- Modificado (modified) : Se ha modificado el archivo pero todavía no lo has confirmado a tu base de datos. 
+- Preparado (staged) : Se ha marcado un archivo modificado en su versión actual para que vaya en tu próxima confirmación.
 
 
 Secciones
 ---------
-	- Directorio de Git (Git direcyory) :  Es la base de datos de objetos para el proyecto. Es lo que se copia cuando se clona un repositorio.
-	- Directorio de trabajo (working direcry) :  Es una copia de una versión del proyecto.
-	- Area de preparación (staging area) : Es un archivo que almacena información sober lo que va a ir en la próxima confirmación.
+- Directorio de Git (Git direcyory) :  Es la base de datos de objetos para el proyecto. Es lo que se copia cuando se clona un repositorio.
+- Directorio de trabajo (working direcry) :  Es una copia de una versión del proyecto.
+- Area de preparación (staging area) : Es un archivo que almacena información sober lo que va a ir en la próxima confirmación.
 
 Flujo de trabajo básico de Git
 ------------------------------
-	1. Modificar : los archivos en tu directorio de trabajo.
-	2. Preparar : los archivos, añadiendolos al área de preparación.
-	3. Confirmar : los cambios, tomando los archivos tal y como están en el área de preparación, y almacena esas instantáneas de manera permanente en el directorio de Git.
+1. Modificar : los archivos en tu directorio de trabajo.
+2. Preparar : los archivos, añadiendolos al área de preparación.
+3. Confirmar : los cambios, tomando los archivos tal y como están en el área de preparación, y almacena esas instantáneas de manera permanente en el directorio de Git.
 
 Si una versión concreta de un archivo está en el directorio de Git, se considera confirmada (committed). Si ha sufrido cambios desde que se obtuvo del repositorio, pero ha sido añadida al área de preparación, está preparada (staged). Y si ha sufrido cambios desde que se obtuvo del repositorio, pero no se ha preparado, está modificada (modified). 
 
 
+Trabajando con Git
+==================
+
 Iniciando git
+-------------
 
 ```shell
 $ git init
@@ -205,5 +213,10 @@ Al trabajar sobre diferentes ramas haciendo cambios en ellas se crean proyectos 
 ![alt text](https://git-scm.com/figures/18333fig0309-tn.png "http://git-scm.com")
 
 
-
 Git Flow
+========
+
+git-flow es un conjunto de extensiones para git que proveen comandos de alto nivel para operar repositorios basados en el [modelo de ramificaciones de Vincent Driessen](https://nvie.com/posts/a-successful-git-branching-model/) 
+
+
+
