@@ -192,4 +192,12 @@ $ git checkout testing
 
 ![alt text](https://git-scm.com/figures/18333fig0306-tn.png "http://git-scm.com")
 
+
+Cambios en una rama
+
+Al realizar cambios en una rama ejemplo testing, esta rama avanza con cada commit
+
+
+
+
 Git Flow
