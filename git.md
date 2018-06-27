@@ -97,6 +97,11 @@ $ git log
 ```
 ![alt text](./img/git_log.png "Git log")
 
+Interfaz gráfica para visualizar el histórico
+
+```shell
+$ gitk
+```
 
 ### Git Ignore
 
