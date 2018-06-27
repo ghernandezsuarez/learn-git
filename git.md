@@ -108,8 +108,8 @@ $ gitk
 Archivos que no serán versionados
 
 
-Deshacer
---------
+Deshacer en el área de preparación
+----------------------------------
 
 ### Modificar ultimo commit
 
@@ -132,5 +132,12 @@ $ git reset HEAD file2.txt
 ```
 
 ![alt text](./img/git_reset_head.png "Git reset HEAD")
+
+### Revertir cambios de un archivo
+
+```shell
+$ git checkout -- file 
+```
+
 
 Git Flow
