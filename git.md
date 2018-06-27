@@ -116,7 +116,7 @@ Deshacer en el área de preparación
 ```sell
 $ git commit -m "Add feature"
 $ git add newfile
-git commit --amend
+$ git commit --amend
 ```
 
 ![alt text](./img/git_amend.png "Git amend")
@@ -139,5 +139,17 @@ $ git reset HEAD file2.txt
 $ git checkout -- file 
 ```
 
+### Etiquetas
+
+Listar
+
+```shell
+$ git tag
+```
+
+Crear
+```shell
+$ git tag -a v1.0 -m 'version 1.0'
+```
 
 Git Flow
