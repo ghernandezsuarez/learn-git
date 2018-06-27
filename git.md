@@ -193,10 +193,16 @@ $ git checkout testing
 ![alt text](https://git-scm.com/figures/18333fig0306-tn.png "http://git-scm.com")
 
 
-Cambios en una rama
+### Cambios en una rama
 
 Al realizar cambios en una rama ejemplo testing, esta rama avanza con cada commit
 
+![alt text](https://git-scm.com/figures/18333fig0307-tn.png "http://git-scm.com")
+
+
+Al trabajar sobre diferentes ramas haciendo cambios en ellas se crean proyectos divergentes. Los cambios de cada una de esas ramas están aislados en ramas independientes.
+
+![alt text](https://git-scm.com/figures/18333fig0309-tn.png "http://git-scm.com")
 
 
 
