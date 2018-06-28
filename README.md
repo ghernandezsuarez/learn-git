@@ -1,8 +1,11 @@
 
+[Conceptos Básicos](#conceptos-básicos) [Trabajando con Git](#trabajando-con-git) [Git Flow](#git-flow)
+
 Control de versiones GIT
 ========================
 
 Conceptos Básicos
+
 =================
 
 
@@ -113,6 +116,8 @@ $ git log
 ```shell
 $ gitk
 ```
+
+![alt text](./img/gitk.png "Gitk")
 
 ### Git Ignore
 
@@ -257,4 +262,6 @@ Iniciar un proyecto con Git Flow
 ```shell
 $ git flow init
 ```
+
+![alt text](./img/gitflow_init.png "Git flow init")
 
