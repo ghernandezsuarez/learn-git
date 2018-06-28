@@ -276,12 +276,69 @@ Es parte de la rama develop
 $ git flow feature start MYFEATURE
 ```
 
-Se crea una nueva rama y se marca como rama de trabajo actual.
+![alt text](./img/gitflow_feature_start.png "Git flow feature start")
+
+* **Publicar feature**
+
+- Hace la publicación del feature en el repositorio remoto
+- Deja el feature disponible para colaboración
+
+```shell
+$ git flow feature publish MYFEATURE
+```
 
 * **Finalizar un feature**
 
 ```shell
 $ git flow feature finish MYFEATURE
 ```
+![alt text](./img/gitflow_feature_finish.png "Git flow feature finish")
 
-Fusiona la rama __MYFEATURE__ en __develop__
+#### Releases
+
+Es la preparación de una versión para paso a producción
+
+* **Iniciar un release**
+
+```shell
+$ git flow release start RELEASE
+```
+![alt text](./img/gitflow_release_start.png "Git flow release start")
+
+* **Publicar un release**
+
+Se debe publicar el release para que otros developers puedan enviar cambios
+
+```shell
+$ git flow release publish RELEASE
+```
+
+* **Finalizar un release**
+
+```shell
+$ git flow release finish RELEASE
+```
+![alt text](./img/gitflow_release_finish.png "Git flow release finish")
+
+
+#### Hotfix
+
+Correcciones para resolver bugs en la aplicación
+
+* **Iniciar un hotfix**
+
+```shell
+$ git flow hotfix start VERSION
+```
+![alt text](./img/gitflow_hotfix_start.png "Git flow hotfix start")
+
+
+* **Finalizar un hotfix**
+
+```shell
+$ git flow hotfix finish VERSION
+```
+![alt text](./img/gitflow_hotfix_finish.png "Git flow hotfix start")
+
+
+#### 
