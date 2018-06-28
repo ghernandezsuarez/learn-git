@@ -219,6 +219,6 @@ Git Flow
 git-flow es un conjunto de extensiones para git que proveen comandos de alto nivel para operar repositorios basados en el [modelo de ramificaciones de Vincent Driessen](https://nvie.com/posts/a-successful-git-branching-model/) 
 
 
-222
-223
-224
+222 master
+223 master
+224 master
