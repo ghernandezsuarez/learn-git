@@ -68,9 +68,12 @@ core.ignorecase=true
 core.precomposeunicode=true 
 ```
 
-user.name=
+```shell
+$ git config --global user.name "name"
+$ git config --global user.email "email@example.com"
+```
 
-user.email
+
 
 ### Git Status 
 
@@ -105,7 +108,7 @@ $ git log
 ```
 ![alt text](./img/git_log.png "Git log")
 
-Interfaz gráfica para visualizar el histórico
+### Interfaz gráfica para visualizar el histórico
 
 ```shell
 $ gitk
@@ -120,6 +123,10 @@ Deshacer en el área de preparación
 ----------------------------------
 
 ### Modificar ultimo commit
+
+El modificador ```--amend``` se usa para adicionar cambios al último commit realizado.
+__Ej.__ Cuando se quedan archivos fuera del área de preparación
+
 
 ```sell
 $ git commit -m "Add feature"
