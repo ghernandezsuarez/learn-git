@@ -5,7 +5,6 @@ Control de versiones GIT
 ========================
 
 Conceptos Básicos
-
 =================
 
 
@@ -265,3 +264,24 @@ $ git flow init
 
 ![alt text](./img/gitflow_init.png "Git flow init")
 
+
+#### Features
+
+Es el desarrollo de características para futuras versiones
+Es parte de la rama develop
+
+* **Iniciar un nuevo feature**
+
+```shell
+$ git flow feature start MYFEATURE
+```
+
+Se crea una nueva rama y se marca como rama de trabajo actual.
+
+* **Finalizar un feature**
+
+```shell
+$ git flow feature finish MYFEATURE
+```
+
+Fusiona la rama __MYFEATURE__ en __develop__
