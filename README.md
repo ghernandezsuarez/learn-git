@@ -216,9 +216,38 @@ Al trabajar sobre diferentes ramas haciendo cambios en ellas se crean proyectos 
 Git Flow
 ========
 
+![alt text](https://wac-cdn.atlassian.com/dam/jcr:61ccc620-5249-4338-be66-94d563f2843c/05%20(2).svg?cdnVersion=jc "Git flow")
+
+
 git-flow es un conjunto de extensiones para git que proveen comandos de alto nivel para operar repositorios basados en el [modelo de ramificaciones de Vincent Driessen](https://nvie.com/posts/a-successful-git-branching-model/) 
 
 
-222 testing
-223 testing
-224 testing
+### Instalación
+
+**osx**
+
+```shell
+$ brew install git-flow-avh
+```
+
+**Linux**
+
+```shell
+$ apt-get install git-flow
+```
+
+**Windows**
+
+```shell
+$ wget -q -O - --no-check-certificate https://raw.github.com/petervanderdoes/gitflow-avh/develop/contrib/gitflow-installer.sh install stable | bash
+```
+
+
+### Cómo se usa?
+
+Iniciar un proyecto con Git Flow
+
+```shell
+$ git flow init
+```
+
