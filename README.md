@@ -1,5 +1,5 @@
 
-[Conceptos Básicos](#conceptos-básicos) [Trabajando con Git](#trabajando-con-git) [Git Flow](#git-flow) []() [Recursos]()
+[\[Conceptos Básicos\]](#conceptos-básicos)   [\[Trabajando con Git\]](#trabajando-con-git)   [\[Git Flow\]](#git-flow)   [\[Revertir Cambios\]](#revertir-cambios)   [\[Cuando todo falla\]](#cuando-todo-falla)   [\[Recursos\]](#recursos)
 
 Control de versiones GIT
 ========================
@@ -380,10 +380,49 @@ $ git flow hotfix finish VERSION
 ```
 ![alt text](./img/gitflow_hotfix_finish.png "Git flow hotfix start")
 
-### Recuperar datos
+### Revertir Cambios
+
+Ver el log 
+
+```shell
+$ git log --pretty=oneline
+```
+![alt text](./img/gitflow_reset_log.png "Git reset log")
 
 
 
+Seleccionar la rama a la cual queremos regresar
+
+```shell
+$ git reset --hard d3c4b3900355e702f77930bec0c379b90a57b0d9
+```
+
+### Cuando todo falla
+
+Ver el registro del HEAD
+
+```shell
+$ git reflog
+```
+
+![alt text](./img/gitflow_reflog.png "Git reflog")
+
+
+Ver con detalle
+
+```shell
+$ git log -g
+```
+![alt text](./img/gitflow_reflog_det.png "Git reflog")
+
+
+*Estratégia:* Crear una rama a partir de log eliminado 
+
+```shell
+$ git branch recover-branch 9fd2ad3
+$ git log --pretty=oneline recover-branch
+
+```
 
 
 
