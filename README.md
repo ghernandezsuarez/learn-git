@@ -1,4 +1,6 @@
 
+[Conceptos Básicos](#conceptos-básicos) [Trabajando con Git](#trabajando-con-git) [Git Flow](#git-flow) []() [Recursos]()
+
 Control de versiones GIT
 ========================
 
@@ -108,11 +110,19 @@ $ git log
 ```
 ![alt text](./img/git_log.png "Git log")
 
+```shell
+$ git log --pretty=oneline
+```
+
+
+
 ### Interfaz gráfica para visualizar el histórico
 
 ```shell
 $ gitk
 ```
+
+![alt text](./img/gitk.png "Gitk")
 
 ### Git Ignore
 
@@ -220,6 +230,40 @@ Al trabajar sobre diferentes ramas haciendo cambios en ellas se crean proyectos 
 ![alt text](https://git-scm.com/figures/18333fig0309-tn.png "http://git-scm.com")
 
 
+#### Fusionar
+
++ Merge
+
+```shell
+$ git merge MYFEATURE
+```
+Incorpora los cambios de la rama _MYFEATURE_ en la rama actual
+
++ Rebase 
+
+```shell
+$ git rebase master 
+```
+
+Replica los cambios confirmados de la rama _master_ en la rama actual
+
+
+### Repositorios Remotos
+
+Publicar
+
+```shell
+$ git push REMOTO RAMA
+```
+
+Publica en el repositorio remoto la rama deseada
+
+Actualizar repositorio local
+
+```shell
+$ git pull 
+```
+
 Git Flow
 ========
 
@@ -258,3 +302,93 @@ Iniciar un proyecto con Git Flow
 $ git flow init
 ```
 
+![alt text](./img/gitflow_init.png "Git flow init")
+
+
+#### Features
+
+Es el desarrollo de características para futuras versiones
+Es parte de la rama develop
+
+* **Iniciar un nuevo feature**
+
+```shell
+$ git flow feature start MYFEATURE
+```
+
+![alt text](./img/gitflow_feature_start.png "Git flow feature start")
+
+* **Publicar feature**
+
+- Hace la publicación del feature en el repositorio remoto
+- Deja el feature disponible para colaboración
+
+```shell
+$ git flow feature publish MYFEATURE
+```
+
+* **Finalizar un feature**
+
+```shell
+$ git flow feature finish MYFEATURE
+```
+![alt text](./img/gitflow_feature_finish.png "Git flow feature finish")
+
+#### Releases
+
+Es la preparación de una versión para paso a producción
+
+* **Iniciar un release**
+
+```shell
+$ git flow release start RELEASE
+```
+![alt text](./img/gitflow_release_start.png "Git flow release start")
+
+* **Publicar un release**
+
+Se debe publicar el release para que otros developers puedan enviar cambios
+
+```shell
+$ git flow release publish RELEASE
+```
+
+* **Finalizar un release**
+
+```shell
+$ git flow release finish RELEASE
+```
+![alt text](./img/gitflow_release_finish.png "Git flow release finish")
+
+
+#### Hotfix
+
+Correcciones para resolver bugs en la aplicación
+
+* **Iniciar un hotfix**
+
+```shell
+$ git flow hotfix start VERSION
+```
+![alt text](./img/gitflow_hotfix_start.png "Git flow hotfix start")
+
+
+* **Finalizar un hotfix**
+
+```shell
+$ git flow hotfix finish VERSION
+```
+![alt text](./img/gitflow_hotfix_finish.png "Git flow hotfix start")
+
+### Recuperar datos
+
+
+
+
+
+
+Recursos
+========
+
++ [https://git-scm.com](https://git-scm.com/book/en/v2)
++ [https://danielkummer.github.io](https://danielkummer.github.io/git-flow-cheatsheet/index.html)
