@@ -1,5 +1,5 @@
 
-[Conceptos Básicos](#conceptos-básicos) [Trabajando con Git](#trabajando-con-git) [Git Flow](#git-flow)
+[Conceptos Básicos](#conceptos-básicos) [Trabajando con Git](#trabajando-con-git) [Git Flow](#git-flow) []() [Recursos]()
 
 Control de versiones GIT
 ========================
@@ -109,6 +109,12 @@ $ git status
 $ git log
 ```
 ![alt text](./img/git_log.png "Git log")
+
+```shell
+$ git log --pretty=oneline
+```
+
+
 
 ### Interfaz gráfica para visualizar el histórico
 
@@ -223,6 +229,40 @@ Al trabajar sobre diferentes ramas haciendo cambios en ellas se crean proyectos 
 
 ![alt text](https://git-scm.com/figures/18333fig0309-tn.png "http://git-scm.com")
 
+
+#### Fusionar
+
++ Merge
+
+```shell
+$ git merge MYFEATURE
+```
+Incorpora los cambios de la rama _MYFEATURE_ en la rama actual
+
++ Rebase 
+
+```shell
+$ git rebase master 
+```
+
+Replica los cambios confirmados de la rama _master_ en la rama actual
+
+
+### Repositorios Remotos
+
+Publicar
+
+```shell
+$ git push REMOTO RAMA
+```
+
+Publica en el repositorio remoto la rama deseada
+
+Actualizar repositorio local
+
+```shell
+$ git pull 
+```
 
 Git Flow
 ========
@@ -340,5 +380,15 @@ $ git flow hotfix finish VERSION
 ```
 ![alt text](./img/gitflow_hotfix_finish.png "Git flow hotfix start")
 
+### Recuperar datos
 
-#### 
+
+
+
+
+
+Recursos
+========
+
++ [https://git-scm.com](https://git-scm.com/book/en/v2)
++ [https://danielkummer.github.io](https://danielkummer.github.io/git-flow-cheatsheet/index.html)
