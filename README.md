@@ -39,6 +39,7 @@ Flujo de trabajo básico de Git
 Si una versión concreta de un archivo está en el directorio de Git, se considera confirmada (committed). Si ha sufrido cambios desde que se obtuvo del repositorio, pero ha sido añadida al área de preparación, está preparada (staged). Y si ha sufrido cambios desde que se obtuvo del repositorio, pero no se ha preparado, está modificada (modified). 
 
 
+
 Trabajando con Git
 ==================
 
@@ -264,6 +265,8 @@ Actualizar repositorio local
 $ git pull 
 ```
 
+
+
 Git Flow
 ========
 
@@ -380,7 +383,10 @@ $ git flow hotfix finish VERSION
 ```
 ![alt text](./img/gitflow_hotfix_finish.png "Git flow hotfix start")
 
-### Revertir Cambios
+
+
+Revertir Cambios
+================
 
 Ver el log 
 
@@ -397,7 +403,10 @@ Seleccionar la rama a la cual queremos regresar
 $ git reset --hard d3c4b3900355e702f77930bec0c379b90a57b0d9
 ```
 
-### Cuando todo falla
+
+
+Cuando todo falla
+=================
 
 Ver el registro del HEAD
 
